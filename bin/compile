@@ -4,14 +4,14 @@
 cd $1
 
 echo "-----> Installing Apache JMeter 2.16"
-wget --quiet https://raw.githubusercontent.com/remore/loadtest-binaries/master/apache-jmeter-2.16-bin.tar.gz
+wget --quiet https://github.com/apache/jmeter/archive/v5_0.tar.gz
 mkdir -p vendor/apache-jmeter
-tar -C vendor/apache-jmeter -xvf apache-jmeter-2.16-bin.tar.gz
+tar -C vendor/apache-jmeter -xvf v5_0.tar.gz
 
 echo "-----> Installing Siege 3.0.9"
-wget --quiet https://raw.githubusercontent.com/remore/loadtest-binaries/master/siege-3.0.9-bin.tar.gz
+wget --quiet https://github.com/JoeDog/siege/archive/v4.0.4r3.tar.gz
 mkdir -p vendor/siege
-tar -C vendor/siege -xvf siege-3.0.9-bin.tar.gz
+tar -C vendor/siege -xvf v4.0.4r3.tar.gz
 
 echo "-----&gt; Installing httperf 0.9.0"
 wget --quiet https://raw.githubusercontent.com/remore/loadtest-binaries/master/httperf-0.9.0-bin.tar.gz
